@@ -36,7 +36,7 @@ schema_view = get_schema_view(
 
 router = routers.DefaultRouter()
 router.register(r'schools', views.SchoolsView)
-
+router.register(r'tweets', views.TweetsView)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [

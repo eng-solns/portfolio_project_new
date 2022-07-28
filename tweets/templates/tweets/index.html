@@ -1,0 +1,11 @@
+{% extends "tweets/home.html" %} 
+{% block title %} Tweets {% endblock %} 
+{% block content %}
+<div class="container">
+  <h1>Tweets</h1>
+  <ul>
+    {% for tweet in tweets %}
+    <li>{{ tweet.title }}</li>
+    {% endfor %}
+  </ul>
+</div>{% endblock %} {% block jsfiles %} {% endblock %}
